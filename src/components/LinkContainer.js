@@ -15,12 +15,11 @@ class LinkContainer extends React.Component {
         /*
             TODO - Create logic for setting the state to filter array and remove favLink at index
         */
-
         this.setState(state => {
             const favLinks = state.favLinks.filter((item, j) => index !== j);
 
             return {
-                favLinks,
+                favLinks
             }
         })
     }

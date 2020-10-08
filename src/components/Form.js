@@ -2,16 +2,14 @@ import React, {Component} from 'react';
 
 class Form extends Component {
     constructor(props) {
-        super(props);
-        
+        super(props);   
         /*
             TODO - set initial state for link name and URL 
 
         */
-
         this.state = {
             name: '',
-            URL: '',
+            URL: ''
         }
     }
 
@@ -19,7 +17,6 @@ class Form extends Component {
         /*
             TODO - Logic for changing state based on form changes
         */
-
         this.setState({[event.target.name]: event.target.value})
 
     }
@@ -35,7 +32,7 @@ class Form extends Component {
 
        this.setState({
            name: '',
-           URL: '',
+           URL: ''
        })
 
     }
