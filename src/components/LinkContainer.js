@@ -7,8 +7,7 @@ class LinkContainer extends React.Component {
         super(props)
         /* TODO - Create state object for storing favLinks */
         this.state = {
-            val: '',
-            favLinks: [],
+            favLinks: []
         }
     }
 
@@ -30,15 +29,7 @@ class LinkContainer extends React.Component {
         /*
             TODO - Create logic to setState and add new favLink to favLinks array in state
         */
-
-        this.setState(state => {
-            const favLinks = state.favLinks.concat(state.val)
-
-            return{
-                favLinks,
-                val: '',
-            }
-        })
+        this.setState({favLinks: this.state.favLinks.concat(favLink)})
     }
 
     render() {
